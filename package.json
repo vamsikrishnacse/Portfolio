@@ -1,5 +1,5 @@
 {
-  "name": "client",
+  "name": "portfolio",
   "proxy": "http://localhost:4000",
   "version": "0.1.0",
   "private": true,
@@ -19,6 +19,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "ajv": "^8.17.1",
     "axios": "^1.7.9",
     "cra-template": "1.2.0",
     "jquery": "^3.7.1",

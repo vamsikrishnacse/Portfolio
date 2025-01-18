@@ -1,0 +1,11 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 670px; /* Chnage height here for background image */
+  background-image: url("../../assets/Home/download.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top; /* center for name in background */
+  opacity: 1.4;
+}
