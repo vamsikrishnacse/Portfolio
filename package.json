@@ -47,9 +47,9 @@
       "react-app/jest"
     ],
     "rules": {
-    "no-unused-vars": "warn",
-    "jsx-a11y/img-redundant-alt": "warn" 
-  }
+      "no-unused-vars": "warn",
+      "jsx-a11y/img-redundant-alt": "warn"
+    }
   },
   "browserslist": {
     "production": [
@@ -64,6 +64,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "webpack-cli": "^6.0.1"
   }
 }
