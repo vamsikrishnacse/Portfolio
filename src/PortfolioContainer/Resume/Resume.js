@@ -18,29 +18,37 @@ const Resume = (props) => {
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   /* REUSABLE MINOR COMPONENTS */
-  const ResumeHeading = (props) => {
-    return (
-      <div className="resume-heading">
-        <div className="resume-main-heading">
-          <div className="heading-bullet"></div>
-          <span>{props.heading ? props.heading : ""}</span>
-          {props.fromDate && props.toDate ? (
-            <div className="heading-date">
-              {props.fromDate + "-" + props.toDate}
-            </div>
-          ) : (
-            <div></div>
-          )}
-        </div>
-        <div className="resume-sub-heading">
-          <span>{props.subHeading ? props.subHeading : ""}</span>
-        </div>
-        <div className="resume-heading-description">
-          <span>{props.description ? props.description : ""}</span>
-        </div>
+  /* REUSABLE MINOR COMPONENTS */
+/* REUSABLE MINOR COMPONENTS */
+const ResumeHeading = (props) => {
+  return (
+    <div className="resume-heading">
+      <div className="resume-main-heading">
+        <div className="heading-bullet"></div>
+        <span>{props.heading ? props.heading : ""}</span>
+        {props.fromDate && props.toDate ? (
+          <div className="heading-date">
+            {props.fromDate + "-" + props.toDate}
+          </div>
+        ) : (
+          <div></div>
+        )}
       </div>
-    );
-  };
+      <div className="resume-sub-heading">
+        <span>{props.subHeading ? props.subHeading : ""}</span>
+      </div>
+      <div className="resume-heading-description">
+        <span>{props.description ? props.description : ""}</span>
+      </div>
+      {props.gpa && (
+        <div className="resume-gpa">
+          <span>GPA: {props.gpa}</span>
+        </div>
+      )}
+    </div>
+  );
+};
+
 
   /* STATIC RESUME DATA FOR THE LABELS*/
   const resumeBullets = [
@@ -104,53 +112,44 @@ const Resume = (props) => {
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
       <ResumeHeading
-        heading={"University of Legon Accra, Ghana"}
-        subHeading={"BACHELOR OF SCIENCE INFORMATION TECHNOLOGY"}
-        fromDate={"2014"}
-        toDate={"2018"}
+        heading={"Illinois Institute of Technology, Chicago, IL"}
+        subHeading={"Master of Computer Science	"}
+        fromDate={"2023"}
+        toDate={"2025"}
+        gpa={"3.66/4.0"}
       />
 
       <ResumeHeading
-        heading={"National Youth Service Corps"}
-        subHeading={"Ministry Of Science And Technogy. Uyo Akwa Ibom State"}
+        heading={"Amrita Vishwa Vidyapeetham, Coimbatore, Tamil Nadu"}
+        subHeading={"Bachelor of Technology in Computer Science and Engineering	"}
         fromDate={"2019"}
-        toDate={"2020"}
+        toDate={"2023"}
+        gpa={"8.0/10.0"}
       />
-      <ResumeHeading
+      {/* <ResumeHeading
         heading={"High School "}
         subHeading={"Command Secondary School Mbiri"}
         fromDate={"2007"}
         toDate={"2012"}
-      />
+      /> */}
     </div>,
 
     /* WORK EXPERIENCE */
     <div className="resume-screen-container" key="work-experience">
       {[
       {
-        heading: "Ehizeex Technoloy",
-        subHeading: "FULL STACK DEVELOPER INTERN",
-        fromDate: "2021",
-        toDate: "Present",
+        heading: "Blue Planet Info Solutions, Maharashtra, Pune",
+        subHeading: "Data Analyst Intern",
+        fromDate: "JUNE  2021 ",
+        toDate: "DEC 2021",
         description: [
-        "Currently working as MERN stack web and mobile developer and also an online instructor on udemy.",
-        "Developed an ecommerce website for client with the dashboard for managing the products, managing reviews, users, payment etc.",
-        "Integrated the web app with backend services to create new user onboarding application with dynamic form content.",
-        "I stretch my mental capacity to develope UI as per the given designs.",
+        "•	 Conducted user seminars for AICTE smart cookie web app, increasing problem-solving by 20% amount users.",
+    "•	Collected and analyzed user data, improving user experience by 30% and streamlining web application development.",
+    "•	Meetings played a pivotal role, attracting 50% more colleges to collect student-teacher feedback and enhancing user experience towards application by 5%.",
+
         ],
       },
-      {
-        heading: "Tech Solutions Inc.",
-        subHeading: "SOFTWARE ENGINEER",
-        fromDate: "2019",
-        toDate: "2021",
-        description: [
-        "Worked on developing scalable web applications using React and Node.js.",
-        "Collaborated with cross-functional teams to define, design, and ship new features.",
-        "Optimized applications for maximum speed and scalability.",
-        "Maintained code quality, organization, and automation.",
-        ],
-      },
+      
       ].map((work, index) => (
       <div className="experience-container" key={index}>
         <ResumeHeading

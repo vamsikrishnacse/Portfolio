@@ -135,18 +135,19 @@ export default function Profile() {
                             <h1>
                                 {""}
                                 <Typewriter
-                                    words={['Frontend Developer', 'Backend Developer', 'Full Stack Developer']}
+                                    words={['Full Stack Developer 💻', 'Data Engineer', 'Cloud Engineer','Big Data Engineer','Mobile Development 📱']}
                                     loop={0}
                                     cursor
                                     cursorStyle='_'
                                     typeSpeed={70}
-                                    deleteSpeed={50}
+                                    deleteSpeed={35}
                                     delaySpeed={1000}
                                 />
                             </h1>
                         </span>
                         <span className="profile-role-tagline">
-                            Knack of building applications with front and back end operations.
+                        Knack for crafting scalable solutions across Full-Stack Development, Mobile Applications, <br />
+                        Cloud Systems, and Big Data Pipelines.
                         </span>
                     </div>
 

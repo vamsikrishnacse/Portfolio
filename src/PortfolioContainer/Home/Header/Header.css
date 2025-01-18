@@ -14,7 +14,7 @@
 }
 .header-logo img {
   height: 140%; /* logo size */
-  width: 170%; /* logo size 170 for all and 130 for not having 2 */
+  width: 130%; /* logo size 170 for all and 130 for not having 2 */
   padding-right: 350px;
   padding-top: 20px;
 }

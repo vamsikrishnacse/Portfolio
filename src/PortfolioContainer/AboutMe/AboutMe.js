@@ -14,15 +14,17 @@ export default function AboutMe(props) {
 
   const SCREEN_CONSTSANTS = {
     description:
-      "Full stack web and mobile developer with background knowledge of MERN stacks with redux, along with a knack of building applications with utmost efficiency. Strong professional with a BSC willing to be an asset for an organization.",
+      "As a versatile professional, I bring expertise across multiple domains, including Full Stack Development , where I build dynamic and responsive web applications; Mobile Development, creating seamless and user-friendly mobile experiences; Data Engineering, ensuring efficient data pipelines and processing workflows; Cloud Engineering, leveraging scalable and secure cloud solutions; and Big Data Engineering, handling vast datasets with precision to derive actionable insights.",
     highlights: {
       bullets: [
-        "Full Stack web and mobile development",
-        "Interactive Front End as per the design",
-        "React and React Native",
-        "Redux for State Mnanagement",
-        "Building REST API",
-        "Managing database",
+       "Full Stack Web and Mobile Development 📱",
+  "Interactive Front End with cutting-edge designs 💻",
+  "Proficient in React, React Native, and Redux for state management",
+  "Building and scaling RESTful APIs",
+  " Designing efficient ETL pipelines and workflows",
+  " Leveraging scalable and secure cloud solutions",
+  " Managing and processing vast datasets for insights",
+  " Ensuring reliable and optimized storage solutions",
       ],
       heading: "Here are a Few Highlights:",
     },
