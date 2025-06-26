@@ -152,9 +152,15 @@ export default function Profile() {
                     </div>
 
                     <div className="profile-options">
-                        <button className="btn primary-btn"
-                            onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
-                        > Hire Me </button>
+                        <a 
+        href="https://www.linkedin.com/in/vamsi-krishna-chitturi" 
+        target="_blank" 
+        rel="noopener noreferrer"
+    >
+        <button className="btn primary-btn">
+            Hire Me
+        </button>
+    </a>
                         <a href="Vamsi.pdf" download="Vamsi Krishna.pdf">
                             <button className="btn highlighted-btn">Get Resume</button>
                         </a>

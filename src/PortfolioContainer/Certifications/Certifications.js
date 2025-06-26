@@ -118,6 +118,8 @@ export default function Certifications(props) {
                       />
                       <div className="certification-details">
                         <h5>{certification.title}</h5>
+                        <br/>
+                        
                         <p>{certification.description}</p>
                         <ul className="skills list-unstyled">
                           {certification.skills.map((skill, i) => (

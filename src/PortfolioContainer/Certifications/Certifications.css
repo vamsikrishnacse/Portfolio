@@ -1,27 +1,47 @@
 .certification-section {
-  padding: 50px 0;
-  background-image: url("../../../src/assets/Testimonial/bg-1.jpg");
+  padding: 60px 0;
+  background-color: #ffffff;
+  color: #1e1e1e;
 }
 
 .certification-item {
-  background: #fff;
-  border-radius: 50px 50px 50px 0px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 10px;
+  background: #fdfdfd;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  padding: 25px;
+  margin: 20px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  border-left: 5px solid #ff5823;
+}
+
+.certification-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12); /* neutral shadow */
+  border-left: 5px solid #1e1e1e; /* dark border on hover */
 }
 
 .certification-item h5 {
   margin-bottom: 10px;
-  font-size: 1.2em;
-  color: #333;
-  padding-bottom: 40px;
+  font-size: 20px;
+  color: #ff5823;
+  font-weight: 600;
+  padding-left: 20px;
+  position: relative;
+}
+
+.certification-item h5::before {
+  content: "▶";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 16px;
+  color: #ff5823;
 }
 
 .certification-item p {
-  margin-bottom: 10px;
   font-size: 1em;
-  color: #666;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .skills {
@@ -33,15 +53,16 @@
   display: inline-block;
   background: #f1f1f1;
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 6px 12px;
   margin: 5px;
   font-size: 0.9em;
   color: #333;
+  border: 1px solid #ddd;
 }
 
 .footer-image {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .footer-image img {

@@ -116,7 +116,7 @@ const ResumeHeading = (props) => {
         subHeading={"Master of Computer Science	"}
         fromDate={"2023"}
         toDate={"2025"}
-        gpa={"3.66/4.0"}
+        gpa={"3.7/4.0"}
       />
 
       <ResumeHeading
